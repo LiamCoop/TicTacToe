@@ -1,5 +1,11 @@
-# TicTacToe
-Importing and updating my project from UVic's SENG475-Robust and Efficient Computing in C++
+# Update
+Imported and updated my project from UVic's SENG475-Robust and Efficient Computing in C++
+
+# to-do:
+-Change #defines to constexpr
+-Implement method for the user to specify a difficulty when they choose to start the game.
+
+# Tic-Tac-Toe
 
 Play Tic-Tac-Toe against a computer adversary implementing the optimal strategy.
 A player implementing this optimal strategy can win, or at least draw, but cannot lose.
@@ -22,3 +28,5 @@ The rules of tic-tac-toe are as follows:
     2) The player is O, and the adversary is X, each player plays a sequence of turns to attempt to create "three-in-a-row" within a 3x3 grid, a player that constructs such a sequence is deemed the winner.
     3) A move that has been previously made may not be remade, (an element containing an 'X' or an 'O' cannot be played again).
     4) The game is over when a player has won, or all possible moves have been consumed.
+
+
