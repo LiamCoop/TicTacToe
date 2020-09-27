@@ -41,7 +41,7 @@ namespace ttt {
         //provides a vector of int pairs with sums across all rows, columns, diags.
         std::vector<std::pair<int,int>> getlistings() const {
             std::vector<std::pair<int,int>> vec;
-            //d = diagonal, x for x's, o for o's, l = left, r = right
+            // x for x's, o for o's, l = left, r = right, d = diagonal
             int dtmpxl = 0, dtmpol = 0, dtmpxr = 0, dtmpor = 0;
             for (auto i = 0; i < 3; ++i) {
                 int rtmpx = 0, rtmpo = 0, ctmpx = 0, ctmpo = 0;
