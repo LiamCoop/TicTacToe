@@ -7,13 +7,13 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define player1 0 // X, computer
-#define player2 1 // O, player
-#define boardsize 3
-#define Xpair 1
-#define Opair 2
-#define tilepairs 3
-#define slashpair 4
+constexpr int player1 = 0; // X, computer
+constexpr int player2 = 1; // O, player
+constexpr int boardsize = 3;
+constexpr int Xpair = 1;
+constexpr int Opair = 2;
+constexpr int tilepairs = 3;
+constexpr int slashpair = 4;
 
 namespace ttt {
     class game {
@@ -133,7 +133,7 @@ namespace ttt {
         refresh();
         int ch;
         while (1) {
-            //48 is ascii value for 0, an offset.
+            //48 is ascii value for 0, used as offset for representing other values with arithmetic.
             ch = getch()-48;
             printw("\n");
             if (ch > 0 && ch <= 9) {
@@ -152,7 +152,7 @@ namespace ttt {
 
     //if the adversary is in a position to win, it should seize that.
     bool win(ttt::game& game) {
-        refresh();
+        refresh();//refresh the screen
         std::vector<std::pair<int, int>> vec = game.getlistings();
         std::pair<int, int> dl = *(vec.end() - 2);//diag starting in top left.
         std::pair<int, int> dr = *(vec.end() - 1);//diag starting in top right.
@@ -401,7 +401,7 @@ namespace ttt {
 
 
 int main(int argc, char* argv[]) {
-    std::vector<int> movesvec;
+    /*std::vector<int> movesvec;
     if(argv[1]){
         std::ifstream file;
         file.open(argv[1]+2, std::ios::in);
@@ -410,6 +410,7 @@ int main(int argc, char* argv[]) {
             movesvec.push_back(std::stoi(tmp));
         } 
     }
+    */
     //ncurses settings / initialization.
     initscr();
     cbreak();
@@ -418,9 +419,11 @@ int main(int argc, char* argv[]) {
     //run the game loop
     ttt::run_game(movesvec);
     //if we're running the demo script don't wait for user input to close
+    /*
     if(movesvec.size() != 0) {
         timeout(4000);
     } 
+    */
     getch();
     endwin();
     exit(0);
