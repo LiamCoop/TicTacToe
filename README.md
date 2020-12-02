@@ -1,9 +1,6 @@
 # Update
 Imported and updated my project from UVic's SENG475-Robust and Efficient Computing in C++
 
-# to-do:
--Change #defines to constexpr
--Implement method for the user to specify a difficulty when they choose to start the game.
 
 # Tic-Tac-Toe
 
