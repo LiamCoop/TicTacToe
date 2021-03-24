@@ -1,6 +1,6 @@
 # Update
 Imported and updated my project from UVic's SENG475-Robust and Efficient Computing in C++
-
+The implementation doesn't make for all that fun of a game seeing as the Adversary implements the optimal strategy and therefore guarantees that the player can never win. In hindsight, I should have required the user to select one of multiple difficulty settings that would have allowed the player at least a chance of winning.
 
 # Tic-Tac-Toe
 
