@@ -2,6 +2,8 @@
 Imported and updated my project from UVic's SENG475-Robust and Efficient Computing in C++
 The implementation doesn't make for all that fun of a game seeing as the Adversary implements the optimal strategy and therefore guarantees that the player can never win. In hindsight, I should have required the user to select one of multiple difficulty settings that would have allowed the player at least a chance of winning.
 
+This was also my first foray into messing around with ncurses, and GUI design.
+
 ![Screenshot from 2021-04-12 23-27-01](https://user-images.githubusercontent.com/22286436/114506441-a51f3000-9be6-11eb-8f45-c99132235fa9.png)
 
 # Tic-Tac-Toe
