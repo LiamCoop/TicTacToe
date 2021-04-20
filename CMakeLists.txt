@@ -16,7 +16,8 @@ include_directories(${CURSES_INCLUDE_DIRS})
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lncurses")
 add_executable(tictactoe ${APP_SOURCE})
 install(TARGETS tictactoe DESTINATION bin)
+target_link_libraries(tictactoe curses)
 
 # install demo script
-install(PROGRAMS demo DESTINATION bin)
-install(FILES autoTTT.txt DESTINATION bin)
+#install(PROGRAMS demo DESTINATION bin)
+#install(FILES autoTTT.txt DESTINATION bin)
