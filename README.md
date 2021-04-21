@@ -1,11 +1,9 @@
-
-![Screenshot from 2021-04-12 23-27-01](https://user-images.githubusercontent.com/22286436/114506441-a51f3000-9be6-11eb-8f45-c99132235fa9.png)
-
 ## Tic-Tac-Toe
 
-Play Tic-Tac-Toe against a computer adversary implementing the optimal strategy.
-A player implementing this optimal strategy can win, or at least draw, but cannot lose.
+Play Tic-Tac-Toe against a computer adversary implementing the optimal strategy using a min/max adversarial model.
+A player implementing such a strategy can win, or at least draw, but cannot lose.
 
+![Screenshot from 2021-04-12 23-27-01](https://user-images.githubusercontent.com/22286436/114506441-a51f3000-9be6-11eb-8f45-c99132235fa9.png)
 
 # Installation & compilation
 Clone the github repository.
