@@ -1,3 +1,12 @@
+
+![Screenshot from 2021-04-12 23-27-01](https://user-images.githubusercontent.com/22286436/114506441-a51f3000-9be6-11eb-8f45-c99132235fa9.png)
+
+## Tic-Tac-Toe
+
+Play Tic-Tac-Toe against a computer adversary implementing the optimal strategy.
+A player implementing this optimal strategy can win, or at least draw, but cannot lose.
+
+
 # Installation & compilation
 Clone the github repository.
 Execute `cmake -H. -Btmp` to compile.
@@ -13,13 +22,6 @@ Installation instructions for macOS, Ubuntu, are included below.
 
 # Fedora / centOS, etc. using yum
 `sudo yum install ncurses-devel`
-
-![Screenshot from 2021-04-12 23-27-01](https://user-images.githubusercontent.com/22286436/114506441-a51f3000-9be6-11eb-8f45-c99132235fa9.png)
-
-# Tic-Tac-Toe
-
-Play Tic-Tac-Toe against a computer adversary implementing the optimal strategy.
-A player implementing this optimal strategy can win, or at least draw, but cannot lose.
 
 The application uses C-style random-number-generation, using srand & rand functions included in <stdio.h> to simulate a coin-flip to determine which player gets to go first.
 
